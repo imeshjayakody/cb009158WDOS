@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.Z.G Purchase & Donation- LK</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="index1.css">
+
+    <!--FAVICON MANIFEST STYLING-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--FAVICON MANIFEST STYLING ENDS-->
+  </head>
+  <body>
+    <div class="content-area">
+      <header>
+        <!--NAVIGATION BAR-->
+        <div class="navigationbar">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="navigation-menu">
+                <a href="index.html">HOME</a>
+                <a href="typeofanimals.html">TYPE OF ANIMALS/PLANTS</a>
+                <a href="activities.html">ACTIVITIES</a>
+                <a href="purchase&donation.html">PURCHASE & DONATIONS</a>
+                <a href="cus.html">CONTACT US</a>
+            </div>
+        </div>
+        <!--NAVIGATION BAR ENDS-->
+
+    </header>
+
+        <!--MAIN HEADING-->
+        <div class="pagename-title4">
+            <h2>Purchase & Donations</h2>
+        </div>
+        <!--MAIN HEADING ENDS-->
+
+        <!--MAIN TEXT-->
+        <div class="info-area">
+            <div class = "info">
+                <h2>THE SUMMER FUN IS HEATING UP!</h2>
+                <p>Due to the COVID 19 Pandemic, we have limited the number of visitors per day to 150 people.
+                  <br>Therefore, grab your tickets now in order to get here before anyone else does. <br>You won’t regret 
+                  a single minute you spend with your family and us right here at the Dehiwala Zoological Gardens 
+                  on your visit.<br>
+                  Also note that every purchase/donation made, huge or little, helps the zoo fabricate a superior local area 
+                  for the animals.<br>See you soon!</p>
+            </div>
+        </div>
+        <!--MAIN TEXT ENDS-->
+    </div>
+
+    <!-- purchase start -->
+<section class="bodyBg">
+    <section  class="container content-section">
+      <h3 class="section-title">
+        <span >
+          <u style="text-decoration-color:red">
+          🎟 Tickets 🎟
+        </u>
+        </span>
+          
+        <br>
+      </h3>
+      <section class="titleDesc">
+      <span>OFFICIAL ONLINE PURCHASING STORE <br>OF DEHIWALA ZOOLOGICAL GARDENS!</span>
+    </section>
+
+      <div class="shop-items">
+         
+        <!-- day start -->
+        <div class="ticket-title"><u style="text-decoration-color:orange">DAY PASS</u></div>
+        <div class="flex-container">
+          <div>
+            <!-- <div class="flex-change">
+              <div class="item-card"> -->
+                <img src="images/dA.png" alt="ticketimage">
+                <div class="details1">
+                <div class="item-box">
+                    <span class="item-des">Quantity:</span>
+                    <span class="item-des" >
+                  <input class="qty" type="number" onKeyDown="return false" name="quantity" id="tkt1_quantity"
+                         value="0" min="0">
+                </span>
+                </div>
+                <div class="item-box">
+                    <span class="item-des">Duration:</span>
+                    <span><select class="item-choice" name="duration" id="tkt1_duration">
+                    <option value="1000">3 Hours</option>
+                    <option value="1250">½ Day</option>
+                    <option value="1500">Full Day</option>
+                    <option value="2000">2 Days</option>
+                </select></span>
+                </div>
+                <div class="item-box">
+                  <button class="fav-btn" onclick="addCurrentOrder('Day Pass','Adults', tkt1_quantity.value, tkt1_duration.options[tkt1_duration.selectedIndex].text, tkt1_duration.value);">B U Y</button>
+                </div>
+            </div>
+          </div>
+
+            <div class="item-card">
+              <img src="images/dC.jpg" alt="ticketimage">
+              <div class="details">
+                <div class="item-box">
+                    <span class="item-des">Quantity:</span>
+                    <span class="item-des" >
+                  <input class="qty" type="number" onKeyDown="return false" name="quantity" id="tkt2_quantity"
+                         value="0" min="0">
+                </span>
+                </div>
+                <div class="item-box">
+                    <span class="item-des">Duration:</span>
+                    <span><select class="item-choice" name="duration" id="tkt2_duration"
+                                  onchange="addCurrentOrder();">
+                    <option value="500">3 Hours</option>
+                    <option value="750">½ Day</option>
+                    <option value="1000">Full Day</option>
+                    <option value="1500">2 Days</option>
+                </select></span>
+                </div>
+                <div class="item-box">
+                  <button class="fav-btn" onclick="addCurrentOrder('Day Pass','Children', tkt2_quantity.value, tkt2_duration.options[tkt2_duration.selectedIndex].text, tkt2_duration.value);">B U Y</button>
+                </div>
+                </div>
+            </div>
+        </div>
+      </div>
+        <!-- day end -->
+    </section>
+
+        <!-- student start -->
+      <section>  
+        <div class="ticket-title"><u style="text-decoration-color:orange">STUDENT PASS</u></div>
+        <!-- <div class="flex-change">
+
+          <div class="item-card"> -->
+            <div class="flex-container">
+              <div>
+                <img src="images/sA.jpg" alt="ticketimage">
+                <div class="details1">
+                <div class="item-box">
+                    <span class="item-des">Quantity:</span>
+                    <span class="item-des" >
+                  <input class="qty" type="number" onKeyDown="return false" name="quantity" id="tkt3_quantity"
+                         value="0" min="0">
+                </span>
+                </div>
+                <div class="item-box">
+                    <span class="item-des">Duration:</span>
+                    <span><select class="item-choice" name="duration" id="tkt3_duration">
+                  <option value="500">3 Hours</option>
+                  <option value="750">½ Day</option>
+                  <option value="1000">Full Day</option>
+                  <option value="1500">2 Days</option>
+                </select></span>
+                </div>
+                <div class="item-box">
+                  <button class="fav-btn" onclick="addCurrentOrder('Student Pass','Adults', tkt3_quantity.value, tkt3_duration.options[tkt3_duration.selectedIndex].text, tkt3_duration.value);">B U Y</button>
+                </div>
+            </div>
+          </div>
+
+            <div class="item-card">
+              <img src="images/sC.jpg" alt="ticketimage">
+              <div class="details">
+                <div class="item-box">
+                    <span class="item-des">Quantity:</span>
+                    <span class="item-des" >
+                    <input class="qty" type="number" onKeyDown="return false" name="quantity" id="tkt4_quantity"
+                         value="0" min="0">
+                  </span>
+                </div>
+                <div class="item-box">
+                    <span class="item-des">Duration:</span>
+                    <span><select class="item-choice" name="duration" id="tkt4_duration">
+                    <option value="250">3 Hours</option>
+                    <option value="500">½ Day</option>
+                    <option value="750">Full Day</option>
+                    <option value="1250">2 Days</option>
+                  </select></span>
+                </div>
+                <div class="item-box">
+                  <button class="fav-btn" onclick="addCurrentOrder('Student Pass','Children', tkt4_quantity.value, tkt4_duration.options[tkt4_duration.selectedIndex].text, tkt4_duration.value);">B U Y</button>
+                </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <!-- student end -->
+        
+        <!-- foreigner start -->
+        <div class="ticket-title"><u style="text-decoration-color:orange">FOREIGNER PASS</u></div>
+        <div class="flex-container">
+          <div>
+        <!-- <div class="flex-change">
+
+            <div class="item-card"> -->
+              <img src="images/fA.jpg" alt="ticketimage">
+              <div class="details1">
+                <div class="item-box">
+                    <span class="item-des">Quantity:</span>
+                    <span class="item-des" >
+                  <input class="qty" type="number" onKeyDown="return false" name="quantity" id="tkt5_quantity"
+                         value="0" min="0">
+                </span>
+                </div>
+                <div class="item-box">
+                    <span class="item-des">Duration:</span>
+                    <span><select class="item-choice" name="duration" id="tkt5_duration">
+                    <option value="5000">3 Hours</option>
+                    <option value="5250">½ Day</option>
+                    <option value="5500">Full Day</option>
+                    <option value="6000">2 Days</option>
+                </select></span>
+                </div>
+                <div class="item-box">
+                  <button class="fav-btn" onclick="addCurrentOrder('Foreigner Pass','Adults', tkt5_quantity.value, tkt5_duration.options[tkt5_duration.selectedIndex].text, tkt5_duration.value);">B U Y</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item-card">
+              <img src="images/fC.jpg" alt="ticketimage">
+              <div class="details">
+                <div class="item-box">
+                    <span class="item-des">Quantity:</span>
+                    <span class="item-des">
+                  <input class="qty" type="number" onKeyDown="return false" name="quantity" id="tkt6_quantity"
+                         value="0" min="0">
+                </span>
+                </div>
+                <div class="item-box">
+                    <span class="item-des">Duration:</span>
+                    <span><select class="item-choice" name="duration" id="tkt6_duration">
+                    <option value="2500">3 Hours</option>
+                    <option value="2750">½ Day</option>
+                    <option value="3000">Full Day</option>
+                    <option value="3500">2 Days</option>
+                </select></span>
+                </div>
+                <div class="item-box">
+                  <button class="fav-btn" onclick="addCurrentOrder('Foreigner Pass','Children', tkt6_quantity.value, tkt6_duration.options[tkt6_duration.selectedIndex].text, tkt6_duration.value);">B U Y</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- foreigner end -->
+
+        <!-- extras start -->
+         <div class="ticket-title"><u style="text-decoration-color:orange">EXTRAS</u></div> 
+         
+        <div class="flex-container">
+            <div> 
+        <!-- <div class="flex-change">
+            <div class="item-card"> -->
+              <img class="extraTkt" src="images/extra.png" alt="ticketimage">
+                 <div class="item-box">
+                    <span class="item-des">Quantity:</span>
+                    <span class="item-des" >
+                  <input class="qty" type="number" onKeyDown="return false" name="quantity" id="extra_quantity"
+                         value="0" min="0">
+                </span>
+                </div>
+                <div class="item-box">
+                    <span class="item-des">Pass Type:</span>
+                    <span><select class="item-choice" name="duration" id="extra">
+                      <option value="5000">Annual Pass</option>
+                      <option value="500">Food Token</option>
+                  </select></span>
+                </div>
+                <div class="item-box">
+                  <button class="fav-btn" onclick="addCurrentOrder('Extra', extra.options[extra.selectedIndex].text, extra_quantity.value, extra.options[extra.selectedIndex].text, extra.value);">B U Y</button>
+                </div>
+            </div>
+        </div> 
+        
+        <!-- extras end -->
+
+        <!-- current order start -->
+    <div class="flex-container3">
+          <div> 
+        <div class="orderHeading">Current Order:</div>
+        <div class="overall-details" style="min-height: 5em;margin-bottom: 1em;">
+            <div class="flex">
+              <span class="cart-title"><u style="text-decoration-color:#04AA6D">TYPE</u></span>
+              <span class="cart-title"><u style="text-decoration-color:#04AA6D">CHOICE</u></span>
+              <span class="cart-title"><u style="text-decoration-color:#04AA6D">QUANTITY</u></span>
+              <span class="cart-title"><u style="text-decoration-color:#04AA6D">DURATION</u></span>
+              <span class="cart-title"><u style="text-decoration-color:#04AA6D">COST</u></span>
+            </div>
+            <div class="current-content" id="current_items"></div>
+            <div class="overall-total" style="right: -45em;width: 23%;">CURRENT TOTAL:  <span style="margin-left: 3em;" id=current_ttl>0</span></div>
+        </div>
+        <!-- current order end -->
+
+        <div class="flex" style=" right: 28em;">
+          <button class="fav-btn" onclick="addToOrder();">Add to Order</button>
+          <button class="fav-btn" onclick="addFavourite();">Add to Favourite</button>
+          <button class="fav-btn" onclick="getFavourite();">Order Favourite</button>
+        </div>
+</div>
+</div>
+<div class="flex-container3">
+  <div>
+        <!-- overall order start -->
+        <div class="orderHeading">Overall Order:</div>
+        <div class="overall-details">
+            <div class="flex">
+                <span class="cart-title"><u style="text-decoration-color:#04AA6D">TYPE</u></span>
+                <span class="cart-title"><u style="text-decoration-color:#04AA6D">CHOICE</u></span>
+                <span class="cart-title"><u style="text-decoration-color:#04AA6D">QUANTITY</u></span>
+                <span class="cart-title"><u style="text-decoration-color:#04AA6D">DURATION</u></span>
+                <span class="cart-title"><u style="text-decoration-color:#04AA6D">COST</u></span>
+            </div>
+            <div class="cart-content" id="overall_items"></div>
+            <div class="overall-total">TOTAL: <span style="margin-left: 3em;" id=total_cost>0</span></div>
+        </div>
+        <!-- overall order end -->
+
+        <!-- loyalty start -->
+        <div class="flex" style=" right: 33em; ">
+          <button class="fav-btn" onclick="placeOrder();">Place Order</button>
+          <button class="fav-btn" onclick="getLoyalty();">Check Loyalty</button>
+        </div>
+        <!-- loyalty end -->
+      </div> 
+    </div>
+    
+  </section>
+<!-- </div></div> -->
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <br>      
+    <!-- purchase end -->
+    
+    
+    <!-- donation start -->
+    <div class="donate">
+        <h2 class="donation-heading"><u style="text-decoration-color:#04AA6D">Donation Centre Checkout:</u></h2>
+        <br>
+        <br>
+        <div class="dRow">
+          <div class="dcol-75">
+            <div class="dContainer">
+              <form method="POST" name="donateForm">
+              
+                <div class="dRow">
+                  <div class="dcol-50">
+                    <h3 class="donation-heading">1: Billing Address -</h3>
+                    <br>
+                    <span class="dspan">Full Name :</span>
+                    <input class="dInput" type="text" id="fname" name="firstname" placeholder="Imesh Jayakody">
+                    <span class="dspan">Email Address :</span>
+                    <input class="dInput" type="text" id="emailAddress" name="emailAddress" placeholder="imeshj@example.com">
+                    <span class="dspan">Address :</span>
+                    <input class="dInput" type="text" id="address" name="address" placeholder="Cooperate Lane">
+                    <span class="dspan">City :</span>
+                    <input class="dInput" type="text" id="city" name="city" placeholder="Homagama">
+        
+                    <div class="dRow">
+                      <div class="dcol-50">
+                        <span class= "dspan">District :</span>
+                        <input class="dInput" type="text" id="district" name="district" placeholder="Colombo">
+                      </div>
+                      <div class="dcol-50">
+                        <span class="dspan">Postal Code :</span>
+                        <input class="dInput" type="text" id="postC" name="postC" placeholder="1000"  maxlength="4">
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="dcol-50">
+                    <h3 class="donation-heading">2: Payment Details -</h3>
+                    <br>
+        
+                    <span>Card Holder's Name :</span>
+                    <input class="dInput" type="text" id="cardHolderName" name="cardname" placeholder="Imesh Chamodya Jayakody">
+        
+                    <span>Credit / Debit Card Number :</span>
+                    <input class="dInput" type="text" id="ccNumber" name="cardnumber" placeholder="1111-2222-3333-4444" maxlength="16">
+        
+                    <div class="dRow">
+                      <div class="dcol-25">
+                        <span>Expiry Month :</span>
+                        <input class="dInput" type="text" id="expMonth" name="expMonth" placeholder="01" maxlength="2">
+                      </div>
+
+                      <div class="dcol-25">
+                        <span>Expiry Year :</span>
+                        <input class="dInput" type="text" id="expYear" name="expYear" placeholder="2023" maxlength="4">
+                      </div>
+
+                      <div class="dcol-25">
+                        <span>CVV :</span>
+                        <input class="dInput" type="text" id="cvv" name="cvv" placeholder="123" maxlength="3">
+                      </div>
+
+                      <div class="dcol-50">
+                        <span>Donation Amount :</span>
+                        <br>
+                        <input type="radio" id="100" name="amount" value="100">
+                          <span>LKR 100</span><br>
+                        <input type="radio" id="250" name="amount" value="250">
+                          <span>LKR 250</span><br>
+                        <input type="radio" id="500" name="amount" value="500">
+                          <span>LKR 500</span><br>
+                        <input type="radio" id="1000" name="amount" value="1000">
+                          <span>LKR 1,000</span><br>
+                        <input type="radio" id="2500" name="amount" value="2500">
+                          <span>LKR 2,500</span><br>
+                        <input type="radio" id="5000" name="amount" value="500">
+                          <span>LKR 5,000</span><br>
+                        <input type="radio" id="10000" name="amount" value="10000">
+                          <span>LKR 10,000</span><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <button type="reset" class="btnDonate" onclick="donateClicked()">PRESS TO DONATE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      <!-- </section> -->
+      </div>
+    <!-- donation end -->
+    <script src="scripts/pd.js"></script>
+     <footer>
+        &#169; COPYRIGHT 2021. ALL RIGHTS RESERVED.<br>
+        Imesh Jayakody(CB009158)<br>
+        Contact No:+94 76 882 9964
+    </footer>
+  </body>
+  </html>
