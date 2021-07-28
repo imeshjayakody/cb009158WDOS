@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:lightgoldenrodyellow;
+  text-align: center;
+}
+
+/*NAVIGATION BAR AND HEADER TEXT STYLING*/
+.nav {
+  border-bottom: 1px solid #EAEAEB;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+.nav label {
+  color: black;
+}
+.menu {
+  margin: 0 30px 0 0;
+}
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color:rosybrown;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+  label {
+      display: block;
+      cursor: pointer;
+  }
+  .menu {
+      text-align: center;
+      width: 100%;
+      display: none;
+  }
+  .menu a {
+      display: block;
+      border-bottom: 1px solid #EAEAEB;
+      margin: 0;
+   
+  }
+  #toggle:checked + .menu {
+      display: block;
+  }
+  
+  
+}
+/*NAVIGATION BAR AND HEADER TEXT STYLING ENDS*/
+
+/*FLEXBOX STYLING FOR IMAGE, TEXTS & BACKGROUND*/
+.animalinfo-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.animalinfo-img img {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.info-text {
+  padding: 15px;
+}
+
+.info-text h2 {
+  text-align: right;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.animal-info1 {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  background-color:rosybrown;
+  border-radius: 20px;
+}
+
+.animal-info2 {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  background-color:antiquewhite;
+  border-radius: 20px;
+}
+
+.animal-info3 {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  background-color:lightgrey;
+  border-radius: 20px;
+}
+
+.animal-info4 {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  background-color:burlywood;
+  border-radius: 20px;
+}
+
+.animal-info5 {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  background-color:darkkhaki;
+  border-radius: 20px;
+}
+
+.animal-info6 {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  background-color:lightblue;
+  border-radius: 20px;
+}
+
+/*HOVER EFFECT STYLING FOR EACH IMAGE IN THE PAGE*/
+.animal-info1 img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 50%;
+  transition: .2s;
+}
+
+.animal-info1 img:hover {
+  transform: scale(1.1);
+}
+
+.animal-info2 img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 50%;
+  transition: .2s;
+}
+
+.animal-info2 img:hover {
+  transform: scale(1.1);
+}
+
+.animal-info3 img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 50%;
+  transition: .2s;
+}
+
+.animal-info3 img:hover {
+  transform: scale(1.1);
+}
+
+.animal-info4 img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 50%;
+  transition: .2s;
+}
+
+.animal-info4 img:hover {
+  transform: scale(1.1);
+}
+
+.animal-info5 img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 50%;
+  transition: .2s;
+}
+
+.animal-info5 img:hover {
+  transform: scale(1.1);
+}
+
+.animal-info6 img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 50%;
+  transition: .2s;
+}
+
+.animal-info6 img:hover {
+  transform: scale(1.1);
+}
+/*HOVER EFFECT STYLING FOR EACH IMAGE IN THE PAGE ENDS*/
+/*FLEXBOX STYLING FOR IMAGE, TEXTS & BACKGROUND ENDS*/
+
+/*MEDIA QUERIES FOR RESPONSIVENESS IN NAVBAR, TEXT & IMAGE AREAS USING FLEXBOX*/
+@media screen and (min-width: 850px) {
+  .navbar {
+      flex-wrap: wrap;
+  }
+  .animalinfo-img {
+      
+      box-sizing: border-box;
+      flex: 1;
+      margin-right: 15px;
+  }
+  .animal-info1 {
+      width: 100%;
+  }
+}
+
+@media screen and (min-width:501px) and (max-width: 850px) {
+  .navbar {
+      flex-wrap: wrap;
+  }
+  .animalinfo-img {
+      
+      box-sizing: border-box;
+      flex: 3;
+      margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .navbar {
+      flex-direction: column;
+  }
+}
+/*MEDIA QUERIES FOR RESPONSIVENESS IN NAVBAR, TEXT & IMAGE AREAS USING FLEXBOX ENDS*/
+
+/*FACTS SECTION*/
+/*'counter-increment' property used to create a counter and increase it by one for each 
+occurence of the selector */
+/*'content' property used to insert generated content with the use of ::before and ::after 
+pseudo-element */
+/*REFERENCE: https://css-tricks.com/almanac/properties/c/counter-increment/, https://developer.mozilla.org/en-US/docs/Web/CSS/content*/
+
+#animal-facts {
+  background-color:burlywood;
+}
+
+#animal-facts h2 {
+  text-align: center;
+  text-decoration:dashed underline;
+  font-size: 50px;
+}
+
+#animal-facts ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
+  list-style: none;
+  counter-reset:any-name;
+}
+
+#animal-facts ol li {
+  display: flex;
+  width:50%;
+  font-size: 25px;
+  margin-bottom: 10px;
+  counter-increment: any-name;
+}
+
+#animal-facts li::before {
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 0.7;
+  content: "0" counter(any-name);
+}
+
+.animal-info img{
+  width: 90%;
+}
+/*FACTS SECTION ENDS*/
+
+footer {
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+}
