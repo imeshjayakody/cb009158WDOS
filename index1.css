@@ -1,0 +1,861 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+body {
+    text-align: center;
+  }
+  .bodyBg{
+    background-image: url(/images/marbleBg.png);
+  }
+  
+  /*NAVIGATION BAR AND HEADER TEXT STYLING*/
+  .navigationbar {
+  background-color:#969696;
+    border-bottom: 1px solid #EAEAEB;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+.navigationbar label {
+    color: whitesmoke;
+}
+.navigation-menu {
+    margin: 0 30px 0 0;
+}
+.navigation-menu a {
+    clear: right;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 10px;
+    line-height: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
+}
+/*NAVIGATION BAR AND HEADER TEXT STYLING ENDS*/
+
+
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.info {
+    width: 100%;
+    margin: 0 auto;
+}
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.info1 {
+    max-width: 100%;
+    margin: 0 auto;
+    background:coral;
+}
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.info2 {
+    max-width: 100%;
+    margin: 0 auto;
+    background: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info2 p {
+    text-align: left;
+}
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.info3 {
+    max-width: 100%;
+    margin: 0 auto;
+    background:goldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.info3 p {
+    text-align: right;
+}
+
+/*BACKGROUND IMAGE STYLING FOR EACH PAGE*/
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.pagename-title1{
+    width: 100%;
+    height: 489px;
+    position: relative;
+    top: 0px;
+    background-image: url(./cimages/giraffe.jpeg); 
+    background-size: cover;
+    background-position: center center;
+}
+
+.pagename-title1 marquee {
+    font-size: 13px;
+    color:lightslategray;
+}
+
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.pagename-title2 {
+    width: 100%;
+    height: 489px;
+    position: relative;
+    top: 0px;
+    background-image: url(./cimages/tof.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.pagename-title3{
+    width: 100%;
+    height: 489px;
+    position: relative;
+    top: 0px;
+    background-image: url(./cimages/activitypage.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.pagename-title4{
+    width: 100%;
+    height: 489px;
+    position: relative;
+    top: 0px;
+    background-image: url(./cimages/ticket.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.pagename-title5{
+    width: 100%;
+    height: 489px;
+    position: relative;
+    top: 0px;
+    background-image: url(./cimages/adventure.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.pagename-title1 h2,
+.pagename-title2, h2,
+.pagename-title3 h2,
+.pagename-title4 h2,
+.pagename-title5 h2{
+  padding-top: 214px;
+}
+.pagename-title2, h2{
+    text-align: center;
+}
+@media(max-width:1030px){
+  .pagename-title2,h2{
+    padding-top: 77vh;
+  }
+  /* .flex-container3 > div {
+    margin-left: -1px;
+} */
+
+}
+
+.pagename-title1, .pagename-title2, .pagename-title3, .pagename-title4, .pagename-title5 h2 {
+    text-align: center;
+    /* font-size: 15; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+b{
+     font-size: 30px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.info-area {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    background: #ddd;
+}
+
+.info-area h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.info-area p {
+    padding: 2% 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 30px;
+}
+/*STYLING FOR BOX THAT DISPLAYS TICKET PRICES*/
+.pricing-info {
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+    background-color: cadetblue;
+}
+/*STYLING FOR BOX THAT DISPLAYS TICKET PRICES ENDS*/
+
+
+/* ARTICLE STYLING ON HOMEPAGE ABOUT THE ZOO, REFERENCING: https://www.smashingmagazine.com/2019/07/css-lists-markers-counters/ */
+/*'counter-reset' is a property used together with counter-increment and 'content' property in order to create or reset CSS counters*/
+.information-article {
+    background-color:darkgoldenrod;
+}
+
+article {
+    font: 1.4em/1.3 "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    margin: 2em 3em;
+    counter-reset: heading-counter;
+    background: bisque;
+}
+
+h3 {
+    counter-increment: heading-counter;
+}
+  
+h3 {
+    display: list-item;
+}
+/*ARTICLE STYLING ON HOMEPAGE ABOUT THE ZOO ENDS*/
+
+/*SETS A BACKGROUND COLOR FOR MARQUEE*/
+.price-marquee {
+    background-color:#8BAD66;
+}
+/*SETS A BACKGROUND COLOR FOR THE AREA*/
+.youtube-video {
+    background-color:cadetblue;
+}
+
+footer {
+    text-align: center;
+    background-color:burlywood;
+}
+
+
+/*FLEXBOX STYLING FOR TYPE OF ANIMALS/TABLE FOR PLANTS PAGE*/
+.animals-display {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+/* Create four equal columns that lays next to each other */
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.info-image {
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+.info-image h2 {
+    text-decoration: underline;
+}
+
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.info-image img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: .2s;
+}
+
+.info-image img:hover {
+    transform: scale(1.5);
+}
+  
+/* Responsive layout - makes a two column-layout instead of four*/
+@media screen and (max-width: 800px) {
+.info-image {
+    flex: 50%;
+    max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+@media screen and (max-width: 600px) {
+.info-image {
+    flex: 100%;
+    max-width: 100%;
+}
+}
+
+/*TYPE OF PLANTS TABLE STYLING*/
+/*WIDTH AND MAX-WIDTH SET TO 100% FOR RESPONSIVENESS*/
+.plants-table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+/* ZEBRA STRIPPING EFFECT ON THE TABLE */
+tr:nth-of-type(odd) { 
+    background: #eee; 
+}
+
+/* ZEBRA STRIPPING EFFECT ON THE TABLE ENDS*/
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+}
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+
+
+@media screen  and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+/* FORCES THE TABLE NOT TO LOOK LIKE A TABLE AND RE-ARRANGE LAYOUT ACCORDING TO GIVEN WIDTH VALUES*/
+table, thead, tbody, th, td, tr { 
+	display: block; 
+}
+	
+/* HIDE TABLE HEADERS (but not display: none;, for accessibility) */
+thead tr { 
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+	
+tr { border: 1px solid #ccc; }
+	
+td { 
+	/* Behave  like a "row" */
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+	padding-left: 50%; 
+}
+	
+td:before { 
+	/* Now behave like a table header */
+	position: absolute;
+	/* Top/left values padding settings*/
+	top: 6px;
+	left: 6px;
+	width: 45%; 
+	padding-right: 10px; 
+	white-space: nowrap;
+}
+/*TYPE OF PLANTS TABLE STYLING ENDS*/
+/*FLEXBOX STYLING FOR TYPE OF ANIMALS/TABLE FOR PLANTS PAGE ENDS*/
+
+
+/*ACTIVITIES PAGE STYLING*/
+.activities-boxes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+
+}
+
+.zooactivity {
+    background-color:darkcyan;
+    color: white;
+    padding: 16px;
+    border-radius: 20%;
+}
+}
+
+.zooactivity p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.zooactivity b {
+    color:darkkhaki;
+}
+
+.activities-boxes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.zooactivity {
+    background-color:darkcyan;
+    color: white;
+    padding: 16px;
+    border-radius: 20%;
+}
+/*ACTIVITIES PAGE STYLING END*/
+ 
+
+/*LINKS FOR THE TWO DESIGN PAGES*/
+.designpages-link {
+    background-color:darkkhaki;
+    color: white;
+    padding: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+}
+  
+.designpages-12 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 16px;
+}
+/*LINKS FOR THE TWO DESIGN PAGES ENDS*/
+  
+/* IF SCREEN IS LARGER THAN 600PX, SPLIT TO 2 COLUMNS*/
+@media (min-width: 600px) {
+.designpages-12 { grid-template-columns: repeat(2, 1fr); }
+}
+  
+/* IF SCREEN IS LARGER THAN 900PX, SPLIT TO 3 COLUMNS*/
+@media (min-width: 900px) {
+.designpages-12 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* IF SCREEN IS LARGER THAN 600PX, SPLIT TO 2 COLUMNS*/
+ @media (min-width: 600px) {
+.activities-boxes { grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* IF SCREEN IS LARGER THAN 600PX, SPLIT TO 2 COLUMNS*/
+@media (min-width: 900px) {
+.activities-boxes{ grid-template-columns: repeat(3, 1fr); 
+ }
+}
+
+/* purchase start */
+
+.section-title,
+.titleDesc{
+  color: forestgreen;
+  background-color: #f1ecec;
+  font-family: "Brandon Grotesque",Lato,Helvetics,Arial,sans-serif;
+}
+.section-title{
+  font-size: 3em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 10vh;
+}
+.titleDesc{
+  margin-bottom: 10vh;
+  font-weight: bolder;
+}
+
+.item-des{
+  width: 10em;
+  text-align: left;
+  margin-right: 54px;
+  margin-left: 3px;
+  font-family: system-ui;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.item-choice{
+  width: 10em;
+}
+.qty{
+  width: 10em;
+  margin-left: -3.5px;
+}
+
+.item-box{
+  margin: 0.5em 0px 10px 35px;
+    text-align: left;
+}
+.details,
+.details1 {
+  margin-left: 16px;
+}
+.details{
+  padding-top: 25px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+.add-cart-btn{
+  margin-top: 1em;
+  padding: 5px;
+}
+
+.cart-btn{
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 0.5em;
+  box-shadow: 0px 0px 5px #ffffffeb;
+  position: absolute;
+  right: 25px;
+  margin-top: 3em;
+  cursor: pointer;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: DodgerBlue; */
+}
+
+.flex-container > div {
+  background-color: #fbf4f4cd;
+  width: 430px;
+  border: none;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  margin-left: 22px;
+  box-shadow: 1px 1px 3px 1px #888888;
+  border-radius: 0;
+  padding-top:20px;
+}
+/*extra*/
+.flex-container1 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container1 > div {
+  background-color: #f1f1f1;
+  width: 467px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  margin-left: 523px;
+  
+}
+/*cart*/
+.flex-container2 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container2 > div {
+  /* background-color: #f1f1f1; */
+  width: 1117px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  margin-left: 184px;
+  
+}
+.flex-container3 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 15vh;
+  justify-content: center;
+}
+
+.extraTkt{
+  width: 50%;
+  margin-bottom: -10vh;
+  margin-top: -5vh;
+}
+
+.flex-container3 > div {
+  background-color: #f1f1f1;
+  width: 1117px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  /* margin-left: 120px;   */
+}
+@media (max-width:400px) {
+  
+.flex-container3 > div {
+  margin-left: 0px;
+}
+}
+/* cart */
+.cart{
+  width: 35%;
+  height: 25em;
+  background-color: white;
+  position: relative;
+  right: -51em;
+  bottom: 31em;
+}
+
+.display{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+/* new */
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-change{
+  display: flex;
+}
+
+.item-card{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  width: 45%;
+  /* height: 7em; */
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
+.ticket-title{
+  margin-top: 2em;
+  font-size: 28px;
+  font-family: -webkit-pictograph;
+  font-weight: 900;
+  text-decoration: underline;
+  margin-bottom: 2vh;
+  color: darkslategrey;
+}
+img {
+ width: 80%;
+ margin-top: 2vh;
+}
+
+.item-choice,
+.qty{
+  border-radius: 5px;
+    border: 1px #0000004a solid;
+    padding: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="flex-change"] {
+    display: block;
+  }
+  [class*="item-card"]{
+    width: 100%;
+  }
+}
+
+/* current order */
+.current-order{
+  color: white;
+  margin: 4em 0 0 0;
+  font-size: 1.3em;
+}
+
+.current-content{
+  overflow-y: scroll;
+  max-height: 20em;
+  min-height: 5em;
+  font-family: cursive;
+  font-weight: 500;
+}
+
+.fav-btn{
+  margin: 0.2em;
+  padding: 0.2em;
+  /* margin-left: 78px; */
+  border: none;
+  background-color: #e58a1f;
+  padding: 10px;
+  font-size: 16px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 5px;
+  color: white;
+
+}
+
+.orderHeading{
+  color: #36ad47;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+/* overall details */
+.overall-details{
+  /* width: 80%; */
+  min-height: 15em;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 5em;
+  border-radius: 0.5em;
+  /* padding: 1em; */
+}
+
+.cart-title{
+  width: 19.25%;
+  margin: 0px 2px 0px 2px;
+  font-family:sans-serif;
+  font-weight: 500;
+}
+.cart-item{
+  width: 20%;
+  font-family: cursive;
+  font-weight: 500;
+  margin: 0px 2px 0px 2px;
+}
+
+.cart-content{
+  overflow-y: scroll;
+  /* height: 20em;
+  max-height: 20em; */
+}
+
+.overall-total{
+  font-family:sans-serif;
+  font-weight: 500;
+  bottom: 0em;
+  right: -50em;
+  width: 15%;
+}
+
+.item-details{
+  margin: 0.5em 0 0.5em 0;
+}
+
+@media (max-width:400px) {
+  .flex-container2 > div {
+    margin-left: 0px;
+  }
+}
+
+/* purchase end */
+
+
+/* donate start */
+
+
+.donate {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+    margin-top: -131vh;
+    text-align: left;
+  }
+  
+  .dRow {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .dcol-25 {
+    -ms-flex: 25%; 
+    flex: 25%;
+  }
+  
+  .dcol-50 {
+    -ms-flex: 50%; 
+    flex: 50%;
+  }
+  
+  .dcol-75 {
+    -ms-flex: 75%; 
+    flex: 75%;
+  }
+  
+  .dcol-25,
+  .dcol-50,
+  .dcol-75 {
+    padding: 0 16px;
+  }
+  
+  .dContainer {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding-bottom: 81px;
+  }
+  
+  .dInput[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .dLabel {
+    margin-bottom: 10px;
+    /* display: block; */
+  }
+  
+  /* .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+   */
+  .btnDonate {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .dspan{
+      text-align: left;
+  }
+  .btnDonate:hover {
+    background-color: #45a049;
+  }
+  
+   @media (max-width: 800px) {
+    .dRow {
+      flex-direction: column-reverse;
+    }
+    .dcol-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+/* donate end */
